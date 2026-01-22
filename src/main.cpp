@@ -11,11 +11,11 @@
 #include <ArduinoJson.h>
 
 // --- KONFIGURASI FIREBASE ---
-#define API_KEY "AIzaSyCuO-74xl-MsrqEtae9IIbn5bA1pn3BAfY"
-#define DATABASE_URL "https://modang-f66ad-default-rtdb.asia-southeast1.firebasedatabase.app/"
-#define FIREBASE_PROJECT_ID "modang-f66ad"
-#define DEFAULT_USER_EMAIL "tes@gmail.com"
-#define DEFAULT_USER_PASSWORD "tes123cuy"
+#define API_KEY "AUubhYIGIui-29JJHbiheaayjgdw238U"
+#define DATABASE_URL "https://panel-v664-manual-rtba.airline-africa.warwerbase"
+#define FIREBASE_PROJECT_ID "paneljitu-spe2"
+#define DEFAULT_USER_EMAIL "tormonitorketua@gmail.com"
+#define DEFAULT_USER_PASSWORD "warwess289black"
 #define DEVICE_ID "ESP001"
 
 // --- KONFIGURASI PIN ---
@@ -306,8 +306,8 @@ void sendToFirestore(float PH, int TDS, float Temp) {
 
 
 void wiFiConnection() {
-  String ssid = preferences.getString("ssid", "DESA SARIROGO 4G");
-  String pass = preferences.getString("password", "sarirogo2025");
+  String ssid = preferences.getString("ssid", "gorgon");
+  String pass = preferences.getString("password", "12340987");
   if (ssid == "" || pass == "") return;
   WiFi.begin(ssid.c_str(), pass.c_str());
   unsigned long start = millis();
